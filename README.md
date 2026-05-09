@@ -22,9 +22,6 @@ Wet-lab (overall goal to collect hippocampal neuron data):
   
 Dry-lab (overall goal to analyze the collected data):
 - Images are converted to ImageJ where fluorescence can be quanitified
-  
-   - (I TALK MORE ABOUT THIS IN THE MY CONTRIBUTION SECTION, BUT FOLLOWING THIS IS WHERE I HAD FIGURED OUT A MORE OPTIMAL WAY TO ANALYZE THE DATA AND CREATED MY OWN PYTHON/EXCEL SCRIPTS)
-
 - Fluorescense data is pasted into an initial Excel file to organize data. The data in this file is normalized and set up so a custom python script can read the data.
 - Python reads, analyzes, and outputs data to a secondary Excel file. In addition, the python code included functions to test and visualize the data to ensure that the data was being properly processed.           Fluorsecent peaks are automatically found for the 1HZ data and sent to the second Excel File.
 - GraphPad Prism is used to find the rate of decay for the 20Hz data, and this value is pasted manually into the second Excel file
@@ -32,7 +29,11 @@ Dry-lab (overall goal to analyze the collected data):
 - AT THE VERY END OF THE SUMMER, once all of the data sets were collected, a complete, averaged data set was created to completly synthesize findings
 
 ## My Contribution 
-While I completed both the wet-lab and dry-lab components of the project, the biggest impact that I had was creating a much faster pipleine to analyze data. The wet-lab portion of the lab was very established, however, the data analysis pipeline was not very established. After collecting the data from the neurons, a very large dataset was created that at the time took over eight hours to analyze. I brought that analysis time down to two hours. I was also able to generate preliminary trends which have given insights to drive future directions for the project. 
+While I completed both the wet-lab and dry-lab components of the project, the biggest impact that I had was creating a much faster pipleine to analyze data. The wet-lab portion of the lab was very established, however, the data analysis pipeline was not very established. After collecting the data from the neurons, a very large dataset was created that at the time took over eight hours to analyze. I brought that analysis time down to two hours. 
+
+In terms of data analysis, the current solution involved copying and pasting the neuronal data from ImageJ into an excel file and manually annotating fluorescent peaks and other properties we wished to analyze. I spent a week at the beginning of the project determining what would be a good solution to the lengthy analysis time. I determined that the best solution would combine python and excel to semi-automate the data analysis, and I rapidly learned excel within a week. Python/Excel scripts were continued to be worked on throughout the course of the project and eventually they were effective enough to analyze all of the collected data 
+
+From this, I was able to generate preliminary trends which have given insights to drive future directions for the project. 
 
 ## Key Findings
 Preliminary trends observed were that neurons in the BHB media fired less intensely than those in the glucose media when stimulated at 20HZ (AP train). In addition, the rate of decay for neurons stimulated with the AP train in BHB was smaller than that of glucose. However, when analyzing the neurons that were stimulated at 1HZ, there appeared to be no significant difference in the neuronal activity between the hippocampal cells in BHB and in glucose.
